@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Lab3-Forms</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form action="https://www.w3schools.com/action_page.php." method="get">
+    <h1>Coffee order</h1>
+    <fieldset>
+        <legend>Customer Information</legend>
+        <p>
+        <label for="customerName">Customer Name: </label>
+        <input type="text" id="customerName" name="customerName">
+        </p>
+
+        <p>
+        <label for="email">E-mail address:</label>
+        <input type="email" id="email" name="email">
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Coffee Selection</legend>
+        <p>
+        <label for="coffeeType">Coffee Type: </label>
+        <select id="coffeeType" name="coffeeType">
+            <option>Espresso</option>
+            <option>Americano</option>
+            <option>Latte</option>
+            <option>Cappuccino</option>
+        </select>
+        </p>
+
+        <p>Size: </p>
+        <ul type="none">
+        <li>
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label>
+        </li>
+        <li>
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label>
+        </li>
+        <li>
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label>
+        </li>
+        </ul>
+        
+        <p>Extras: </p>
+        <ul type="none">
+         <li>
+        <input type="checkbox" id="whippedCream" name="extrasWhippedCream" value="Whipped Cream">
+        <label for="whippedCream">Whipped Cream</label>
+        </li>
+        <li>
+        <input type="checkbox" id="extraShot" name="extrasExtraShot" value="Extra Shot">
+        <label for="extraShot">Extra Shot</label>
+        </li>
+        <li>
+        <input type="checkbox" id="almondMilk" name="extrasAlmondMilk" value="Almond Milk">
+        <label for="almondMilk">Almond Milk</label>
+        </li>
+        </ul>
+
+        <p>
+        <label for="specialInstructions">Special Instructions: </label><br>
+       <textarea id="specialInstructions" name="specialInstructions"></textarea>
+       </p>
+        </fieldset>
+
+       <p>
+       <button type="submit">Submit the order</button>
+       </p>
+</form>
+</body>
+</html>
